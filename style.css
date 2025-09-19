@@ -1,4 +1,122 @@
-/*
-#hero, #Om-meg, #pitch, 
-#Kontakt-informasjon, #Prosjekter, 
-*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #e8eae9;
+}
+
+html {
+  background-color: #09091a;
+}
+
+h1 {
+  font-family: "Lato", sans-serif;
+}
+
+footer {
+  min-width: 100vw;
+  min-height: 85px;
+  background-color: #00022b;
+}
+
+.nav-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 85px;
+  background-color: #00022b;
+  padding: 0 2rem;
+}
+
+.nav-links {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 10rem;
+  justify-content: center;
+  align-items: center;
+  font-family: "Fontin smallcaps", sans-serif;
+  font-size: 28px;
+}
+
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 0;
+  background-color: #e8eae9;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.logo-wrapper {
+  height: 85px;
+  max-height: 365px;
+  width: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.logo-wrapper img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+main > div {
+  padding: 2rem 4rem;
+  text-align: center;
+}
+
+#om-meg,
+#kontakt-informasjon,
+#prosjekter-container {
+  border-top: 1px solid #e8eae9;
+  padding-top: 3rem;
+  margin-top: 3rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+/* Media query, mobile layout */
+
+@media (max-width: 600px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .logo-wrapper {
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+}

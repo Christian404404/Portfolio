@@ -3,22 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/favIcon.png" type="image/png" />
     <link rel="stylesheet" href="style.css" />
     <title>Portfolio</title>
   </head>
   <body>
     <header>
-      <nav></nav>
+      <nav class="nav-bar">
+        <div class="logo-wrapper">
+          <img src="./img/logoTest.png" alt="logo" />
+        </div>
+        <div class="nav-links">
+          <a href="#Om-meg">Om meg</a>
+          <a href="#Kontakt">Kontakt</a>
+          <a href="#Prosjekter">Prosjekter</a>
+        </div>
+      </nav>
     </header>
     <main>
       <div id="hero">
-        <h1></h1>
+        <h1>
+          Hei, mitt navn er Christian og jeg er en front-end utvikler med en
+          lidenskap for koding!
+        </h1>
         <img src="" alt="hero image" />
         <a href="">
-          <div class="links"></div>
+          <div class="link-cv">
+            <p>Last ned CV</p>
+            <p>GitHub</p>
+          </div>
         </a>
       </div>
-      <div id="Om-meg">
+      <div id="om-meg">
         <h2>Om meg</h2>
         <img src="" alt="profilbilde" />
         <img src="" alt="Javascript" />
@@ -30,28 +46,61 @@
         <img src="" alt="React" />
         <p></p>
         <div id="pitch">
-          <p></p>
+          <p>
+            Jeg deltar nå på et kurs som arrangeres av NAV og Jobloop i
+            Stavanger, til nå har vi lært om Figma(web side design verktøy),
+            HTML, CSS og Javascript. Senere i kurset vil vi lære om mer
+            avanserte ting som React, Node.js og SQL. Jeg liker veldig godt
+            Javascript, siden jeg tidligere har lært meg selv c++, der jeg har
+            for det meste brukt www.learncpp.com (Jeg lærer fortsatt). Nå er jeg
+            på utkikk etter å bli en del av et lag som samarbeider om større
+            prosjekter for å ta min egen kunnskap til neste nivå. Jeg er veldig
+            nysgjerrig, liker å lære og løse utfordringer med kode og gir meg
+            som regel ikke før problemet er løst!
+          </p>
         </div>
       </div>
-      <div id="Kontakt-informasjon">
+      <div id="kontakt-informasjon">
         <h2>Kontakt Informasjon</h2>
-        <p></p>
-        <p></p>
-        <p></p>
+        <p>Telefonnummer: 1234 5678</p>
+        <p>E-post: placeholder@gmail.com</p>
+        <p>Github: https://github.com/Christian404404</p>
       </div>
-      <div id="Prosjekter">
-        <section>
-          <articcle></articcle>
-          <articcle></articcle>
-          <articcle></articcle>
-          <articcle></articcle>
-        </section>
+      <div id="prosjekter-container">
+        <div id="Prosjekt-wrapper">
+          <h2>Prosjekter</h2>
+          <div class="Prosjekt-card">
+            <img src="./img/prosjekt_Craftsvilla.png" alt="placeholder" />
+            <h3>Craftsvilla</h3>
+            <p>
+              Nettside for en fiktiv bedrift som tilbyr kurs innen kunst og
+              håndverk.
+            </p>
+          </div>
+          <div class="Prosjekt-card">
+            <img src="./img/prosjekt_vær_app.png" alt="" />
+            <h3>Enkel vær app</h3>
+            <p>
+              En enkel vær app som benytter seg av
+              <a
+                href="https://open-meteo.com/en/features#available_apis"
+                target="_blank"
+                >Meteorologisk Institutt</a
+              >
+              sine APIer.
+            </p>
+          </div>
+          <div class="Prosjekt-card">
+            <img src="./img/prosjekt_api_tv_show_search.png" alt="" />
+            <h3>TV-Show søkemotor</h3>
+          </div>
+        </div>
       </div>
     </main>
     <footer>
-      <p></p>
-      <p></p>
-      <p></p>
+      <p>Telefonnummer: 1234 5678</p>
+      <p>E-post: placeholder@gmail.com</p>
+      <p>Github: https://github.com/Christian404404</p>
       <a href="">
         <img src="" alt="Github" />
       </a>

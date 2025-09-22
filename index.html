@@ -1,21 +1,26 @@
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    /> -->
+
+<!-- <a href="https://www.vecteezy.com/free-videos/high-tech-background"
+  >High Tech Background Stock Videos by Vecteezy</a
+> -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./img/favIcon.png" type="image/png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="style.css" />
+    <script src="javascript.js" defer></script>
     <title>Portfolio</title>
   </head>
   <body>
     <header>
-      <nav class="nav-bar">
+      <nav id="nav-bar" class="hidden">
         <div class="logo-wrapper">
           <img src="./img/logoTest.png" alt="logo" />
         </div>
@@ -26,24 +31,32 @@
         </div>
       </nav>
     </header>
-    <main>
-      <div id="hero">
-        <div id="mini-pitch">
-          <p id="mini-pitch-text">
-            Hei, mitt navn er <span class="navn-highlight">Christian</span
-            ><br />
-            og jeg er en front-end utvikler, <br />
-            med en lidenskap for koding!
-          </p>
-        </div>
-        <img src="" alt="hero image" />
-        <a href="">
-          <div class="link-cv">
-            <p>Last ned CV</p>
-            <p>GitHub</p>
-          </div>
+    <div id="hero">
+      <video autoplay muted loop class="hero-video desktop-video">
+        <source src="./hero_background/desktop_hero.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <video autoplay muted loop class="hero-video mobile-video">
+        <source src="./hero_background/mobile_hero.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div id="mini-pitch">
+        <p id="mini-pitch-text">
+          Hei, mitt navn er <span class="navn-highlight">Christian</span><br />
+          og jeg er en front-end utvikler, <br />
+          med en lidenskap for koding!
+        </p>
+      </div>
+      <div id="CTA-cv-github">
+        <a href="_blank">
+          <p>Last ned CV</p>
+        </a>
+        <a href="_blank">
+          <p>GitHub</p>
         </a>
       </div>
+    </div>
+    <main>
       <div id="om-meg">
         <h2>Om meg</h2>
         <img src="" alt="profilbilde" />

@@ -82,21 +82,25 @@ footer {
 }
 
 #nav-bar {
-  position: sticky;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   align-items: center;
   height: 85px;
-  background-color: #00022b;
+  background-color: rgba(0, 2, 43, 0.8);
+  backdrop-filter: blur(3px);
   padding: 0 2rem;
   transition: transform 0.3s ease-in-out;
   z-index: 999;
 }
 
-#nav-bar .hidden {
+#nav-bar.hidden {
   transform: translateY(-100%);
 }
 
-#nav-bar .visible {
+#nav-bar.visible {
   transform: translateY(0);
 }
 

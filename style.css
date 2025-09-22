@@ -82,20 +82,21 @@ footer {
 }
 
 #nav-bar {
-  position: relative;
+  position: sticky;
   display: flex;
   align-items: center;
   height: 85px;
   background-color: #00022b;
   padding: 0 2rem;
-  position: sticky;
+  transition: transform 0.3s ease-in-out;
+  z-index: 999;
 }
 
-#navbar.hidden {
+#nav-bar .hidden {
   transform: translateY(-100%);
 }
 
-#navbar.visible {
+#nav-bar .visible {
   transform: translateY(0);
 }
 
@@ -175,8 +176,8 @@ main {
   display: none;
 }
 
-#CTA-cv-github {
-}
+/* #CTA-cv-github {
+} */
 
 main > div {
   padding: 2rem 4rem;
@@ -197,8 +198,8 @@ h2 {
 
 /* Media query, mobile layout */
 
-@media (max-width: 600px) {
-  .nav-bar {
+@media (max-width: 768px) {
+  #nav-bar {
     flex-direction: column;
     align-items: center;
   }
@@ -213,5 +214,13 @@ h2 {
   .logo-wrapper {
     justify-content: center;
     margin-bottom: 0.5rem;
+  }
+
+  .desktop-video {
+    display: none;
+  }
+
+  .mobile-video {
+    display: block;
   }
 }

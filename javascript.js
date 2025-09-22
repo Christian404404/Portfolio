@@ -3,18 +3,31 @@ const navbar = document.getElementById("nav-bar");
 let ticking = false;
 let hideTimeout;
 
+const scrollLength = 10;
+const autoHideDelay = 2000;
+
+function showNavbar() {
+  navbar.classList.remove("hidden");
+  navbar.classList.add("visible");
+
+  clearTimeout(hideTimeout);
+  hideTimeout = setTimeout(() => {
+    navbar.classList.remove("visible");
+    navbar.classList.add("hidden");
+  }, autoHideDelay);
+}
+
 function handleScroll() {
   const currentScrollY = window.scrollY;
-  const scrollLength = 10;
-  const autoHideDelay = 2000;
 
   if (Math.abs(currentScrollY - lastScrollY) > scrollLength) {
     if (currentScrollY < lastScrollY) {
-      navbar.classList.remove("hidden");
-      navbar.classList.add("visible");
+      showNavbar();
     } else {
       navbar.classList.remove("visible");
       navbar.classList.add("hidden");
+
+      clearTimeout(hideTimeout);
     }
     lastScrollY = currentScrollY;
   }

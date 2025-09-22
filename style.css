@@ -1,3 +1,36 @@
+/* A font by Jos Buivenga (exljbris) -> www.exljbris.com 
+Fontin homepage:  http://www.josbuivenga.demon.nl/fontin.html
+Jos Buivenga
+*/
+@font-face {
+  font-family: "Fontin SmallCaps";
+  src: url("./fonts/Fontin/Fontin-SmallCaps.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fontin Bold";
+  src: url("./fonts/Fontin/Fontin-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato Black";
+  src: url("./fonts/Lato/Lato-Black.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("./fonts/SourceSerifPro/SourceSerifPro-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -11,7 +44,7 @@ html {
 }
 
 h1 {
-  font-family: "Fontin smallCaps", sans-serif;
+  font-family: "Fontin SmallCaps", sans-serif;
 }
 
 #mini-pitch-text {
@@ -20,7 +53,7 @@ h1 {
 }
 
 p {
-  font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Serif Pro", sans-serif;
 }
 
 .navn-highlight {
@@ -53,7 +86,7 @@ footer {
   gap: 10rem;
   justify-content: center;
   align-items: center;
-  font-family: "Fontin smallcaps", sans-serif;
+  font-family: "Fontin SmallCaps", sans-serif;
   font-size: 28px;
 }
 

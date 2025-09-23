@@ -44,11 +44,16 @@ html {
 }
 
 h1 {
+  text-align: center;
   font-family: "Fontin SmallCaps", sans-serif;
 }
 
 h2 {
+  text-align: center;
   font-family: "Fontin SmallCaps", sans-serif;
+  font-size: 3rem;
+  text-decoration: underline #e8eae9 2px solid;
+  margin: 2rem 0 2rem 0;
 }
 
 #mini-pitch-text {
@@ -56,7 +61,7 @@ h2 {
   margin-bottom: 2rem;
   position: relative;
   z-index: 9;
-  color: white;
+  color: #e8eae9;
   text-align: center;
   top: 50%;
   transform: translateY(-50%);
@@ -66,6 +71,8 @@ h2 {
 
 p {
   font-family: "Source Serif Pro", sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
 }
 
 .navn-highlight {
@@ -196,29 +203,110 @@ main {
   display: none;
 }
 
-/* #CTA-cv-github {
-} */
-
-main > div {
-  padding: 2rem 4rem;
+#hero-content {
+  position: relative;
+  z-index: 9;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
   text-align: center;
 }
 
-#om-meg,
-#kontakt-informasjon,
-#prosjekter-container {
+#CTA-cv-github a {
+  display: inline-block;
+  background-color: rgba(0, 2, 43, 0.8);
+  color: #09091a;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#CTA-cv-github a:hover {
+  background-color: rgba(0, 5, 106, 0.8);
+}
+
+#CTA-cv-github p {
+  font-size: 3rem !important;
+}
+
+#om-meg-section {
+  margin-top: 2rem;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  gap: 12rem;
+  justify-items: center;
+  align-items: center;
+  max-width: 1400px;
+  margin: 5rem auto;
+  grid-column: 1 / -1;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skill img {
+  height: 4rem;
+  width: 4rem;
+  margin-bottom: 0.1rem;
+}
+
+#contact-information {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#contact-information,
+#project-container {
   border-top: 1px solid #e8eae9;
-  padding-top: 5rem;
-  margin-top: 5rem;
 }
 
 h2 {
   margin-bottom: 1rem;
 }
 
+#profile {
+  height: 22rem;
+  width: auto;
+}
+
+#pitch p {
+  font-size: 1rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+
 /* Media query, mobile layout */
 
 @media (max-width: 768px) {
+  .display-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
   #nav-bar {
     flex-direction: column;
     align-items: center;
@@ -242,5 +330,22 @@ h2 {
 
   .mobile-video {
     display: block;
+  }
+
+  #pitch {
+    margin-top: 2rem;
+  }
+
+  #hero-content {
+    padding: 2rem 1rem;
+  }
+
+  #CTA-cv-github {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #CTA-cv-github a {
+    margin: 0.5rem 0;
   }
 }

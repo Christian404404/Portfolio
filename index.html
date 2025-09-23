@@ -1,10 +1,3 @@
-<!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
-    /> -->
-
 <!-- <a href="https://www.vecteezy.com/free-videos/high-tech-background"
   >High Tech Background Stock Videos by Vecteezy</a
 > -->
@@ -26,8 +19,8 @@
         </div>
         <div class="nav-links">
           <a href="#om-meg">Om meg</a>
-          <a href="#kontakt-informasjon">Kontakt</a>
-          <a href="#prosjekter-container">Prosjekter</a>
+          <a href="#contact-information">Kontakt</a>
+          <a href="#project-container">Prosjekter</a>
         </div>
       </nav>
     </header>
@@ -40,59 +33,88 @@
         <source src="./hero_background/mobile_hero.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div id="mini-pitch">
-        <p id="mini-pitch-text">
-          Hei, mitt navn er <span class="navn-highlight">Christian</span><br />
-          og jeg er en front-end utvikler, <br />
-          med en lidenskap for koding!
-        </p>
-      </div>
-      <div id="CTA-cv-github">
-        <a href="_blank">
-          <p>Last ned CV</p>
-        </a>
-        <a href="_blank">
-          <p>GitHub</p>
-        </a>
+      <div id="hero-content">
+        <div id="mini-pitch">
+          <p id="mini-pitch-text">
+            Hei, mitt navn er <span class="navn-highlight">Christian</span
+            ><br />
+            og jeg er en front-end utvikler, <br />
+            med en lidenskap for koding!
+          </p>
+        </div>
+        <div id="CTA-cv-github">
+          <a href="_blank">
+            <p>Last ned CV</p>
+          </a>
+          <a href="_blank">
+            <p>GitHub</p>
+          </a>
+        </div>
       </div>
     </div>
     <main>
-      <div id="om-meg">
+      <section id="om-meg-section">
         <h2>Om meg</h2>
-        <img src="" alt="profilbilde" />
-        <img src="" alt="Javascript" />
-        <p></p>
-        <img src="" alt="HTML" />
-        <p></p>
-        <img src="" alt="CSS" />
-        <p></p>
-        <img src="" alt="React" />
-        <p></p>
-        <div id="pitch">
-          <p>
-            Jeg deltar nå på et kurs som arrangeres av NAV og Jobloop i
-            Stavanger, til nå har vi lært om Figma(web side design verktøy),
-            HTML, CSS og Javascript. Senere i kurset vil vi lære om mer
-            avanserte ting som React, Node.js og SQL. Jeg liker veldig godt
-            Javascript, siden jeg tidligere har lært meg selv c++, der jeg har
-            for det meste brukt www.learncpp.com (Jeg lærer fortsatt). Nå er jeg
-            på utkikk etter å bli en del av et lag som samarbeider om større
-            prosjekter for å ta min egen kunnskap til neste nivå. Jeg er veldig
-            nysgjerrig, liker å lære og løse utfordringer med kode og gir meg
-            som regel ikke før problemet er løst!
-          </p>
+        <div class="about-grid">
+          <div id="om-meg">
+            <img
+              src="./img/user-icon-svgrepo-com.svg"
+              alt="profilbilde"
+              id="profile"
+            />
+          </div>
+          <div id="pitch">
+            <p>
+              Jeg deltar nå på et kurs som arrangeres av NAV og Jobloop i
+              Stavanger, til nå har vi lært om Figma (web side design verktøy),
+              HTML, CSS og Javascript. Senere i kurset vil vi lære om mer
+              avanserte ting som React, Node.js og SQL.
+              <br />
+              Jeg liker veldig godt Javascript, siden jeg tidligere har lært meg
+              selv C++, der jeg for det meste har brukt www.learncpp.com (Jeg
+              lærer fortsatt).
+              <br />
+              Nå er jeg på utkikk etter å bli en del av et lag som samarbeider
+              om større prosjekter for å ta min egen kunnskap til neste nivå.
+              <br />
+              Jeg er veldig nysgjerrig, liker å lære og løse utfordringer med
+              kode og gir meg som regel ikke før problemet er løst!
+            </p>
+          </div>
+          <div class="skills-grid">
+            <div class="skill">
+              <img src="./img/javascript-16-svgrepo-com.svg" alt="Javascript" />
+              <p>Javascript</p>
+            </div>
+            <div class="skill">
+              <img src="./img/html5-logo-svgrepo-com.svg" alt="HTML" />
+              <p>HTML</p>
+            </div>
+            <div class="skill">
+              <img src="./img/css-svgrepo-com.svg" alt="CSS" />
+              <p>CSS</p>
+            </div>
+            <div class="skill">
+              <img src="./img/react-svgrepo-com.svg" alt="React" />
+              <p>React</p>
+            </div>
+            <div class="skill">
+              <img src="./img/figma-svgrepo-com.svg" alt="Figma" />
+              <p>Figma</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div id="kontakt-informasjon">
+      </section>
+      <div id="contact-information">
         <h2>Kontakt Informasjon</h2>
         <p>Telefonnummer: 1234 5678</p>
         <p>E-post: placeholder@gmail.com</p>
         <p>Github: https://github.com/Christian404404</p>
       </div>
-      <div id="prosjekter-container">
-        <div id="Prosjekt-wrapper">
+      <div id="project-container">
+        <div id="Project-wrapper">
           <h2>Prosjekter</h2>
-          <div class="Prosjekt-card">
+          <div class="Project-card">
             <img src="./img/prosjekt_Craftsvilla.png" alt="placeholder" />
             <h3>Craftsvilla</h3>
             <p>
@@ -100,7 +122,7 @@
               håndverk.
             </p>
           </div>
-          <div class="Prosjekt-card">
+          <div class="Project-card">
             <img src="./img/prosjekt_vær_app.png" alt="" />
             <h3>Enkel vær app</h3>
             <p>
@@ -113,9 +135,12 @@
               sine APIer.
             </p>
           </div>
-          <div class="Prosjekt-card">
+          <div class="Project-card">
             <img src="./img/prosjekt_api_tv_show_search.png" alt="" />
-            <h3>TV-Show søkemotor</h3>
+            <h3>
+              TV-Show, søk og finn serier. Benytter seg av
+              <a href=""></a>
+            </h3>
           </div>
         </div>
       </div>

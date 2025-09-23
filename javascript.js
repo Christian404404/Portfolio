@@ -1,10 +1,10 @@
-let lastScrollY = window.scrollY;
 const navbar = document.getElementById("nav-bar");
+let lastScrollY = window.scrollY;
 let ticking = false;
 let hideTimeout;
 
 const scrollLength = 10;
-const autoHideDelay = 2000;
+const autoHideDelay = 4000;
 
 function showNavbar() {
   navbar.classList.remove("hidden");
@@ -21,9 +21,11 @@ function handleScroll() {
   const currentScrollY = window.scrollY;
 
   if (Math.abs(currentScrollY - lastScrollY) > scrollLength) {
+    // UP
     if (currentScrollY < lastScrollY) {
       showNavbar();
     } else {
+      // DOWN
       navbar.classList.remove("visible");
       navbar.classList.add("hidden");
 

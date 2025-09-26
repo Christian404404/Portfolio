@@ -127,7 +127,7 @@ footer {
   justify-content: center;
   align-items: center;
   font-family: "Fontin SmallCaps", sans-serif;
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 
 .nav-links a {
@@ -136,6 +136,7 @@ footer {
   font-size: 1.2rem;
   padding: 0;
   transition: color 0.3s ease;
+  color: #e8eae9;
 }
 
 .nav-links a::after {
@@ -225,22 +226,20 @@ main {
 
 #CTA-cv-github a {
   display: inline-block;
-  background-color: rgba(0, 2, 43, 0.8);
-  color: #09091a;
-  padding: 0.5rem 1rem;
+  background-color: rgba(43, 78, 231, 0.8);
+  color: #e8eae9;
+  padding: 1rem 1rem;
   margin: 0 0.5rem;
   border-radius: 4px;
   text-decoration: none;
+  font-size: 2rem;
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
 #CTA-cv-github a:hover {
-  background-color: rgba(0, 5, 106, 0.8);
-}
-
-#CTA-cv-github p {
-  font-size: 3rem !important;
+  background-color: rgba(143, 210, 220, 0.8);
+  color: #09091a;
 }
 
 .white-space {

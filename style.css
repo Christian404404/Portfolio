@@ -71,22 +71,26 @@ h2 {
 
 p {
   font-family: "Source Serif Pro", sans-serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.8;
 }
 
 /* testing links */
 a {
-  color: #8fd2dc;
+  color: #58bece;
   text-decoration: underline;
   font-family: inherit;
 }
 
-.navn-highlight {
+.name-highlight {
   color: #8fd2dc;
   font-weight: bold;
   text-decoration: underline;
   font-size: 3rem;
+}
+
+.keyword-highlight {
+  color: #8fd2dc;
 }
 
 footer {
@@ -226,7 +230,8 @@ main {
 
 #CTA-cv-github a {
   display: inline-block;
-  background-color: rgba(43, 78, 231, 0.8);
+  /* background-color: rgba(43, 78, 231, 0.8); */
+  background-color: rgba(0, 32, 175, 0.8);
   color: #e8eae9;
   padding: 1rem 1rem;
   margin: 0 0.5rem;
@@ -282,6 +287,35 @@ main {
   border-top: 1px solid #e8eae9;
 }
 
+#Project-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  align-items: start;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.Project-card {
+  background-color: #0f0f2b;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.Project-card:hover {
+  transform: translateY(-5px);
+}
+
+.Project-card img {
+  max-width: 100%;
+  height: auto;
+}
+
 h2 {
   margin-bottom: 1rem;
 }
@@ -292,7 +326,7 @@ h2 {
 }
 
 #pitch p {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .about-grid {
@@ -307,7 +341,7 @@ h2 {
 
 /* Media query, mobile layout */
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .display-grid {
     grid-template-columns: 1fr;
     text-align: center;

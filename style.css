@@ -363,18 +363,28 @@ h2 {
 }
 
 #profile {
-  height: 22rem;
-  width: auto;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+#pitch {
+  text-align: center;
 }
 
 #pitch p {
   font-size: 1.1rem;
+  line-height: 2;
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .about-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
   justify-content: center;
   gap: 2rem;
   padding: 2rem;

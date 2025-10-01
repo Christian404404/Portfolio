@@ -306,15 +306,26 @@ main {
 
 .Project-card {
   min-height: 500px;
-  background-color: rgba(79, 78, 97, 0.8);
+  background-color: rgba(79, 78, 97, 0.3);
   border-radius: 8px 8px 0 0;
   margin-top: 2rem;
   text-align: center;
   transition: transform 0.3s ease;
+  -webkit-mask-image: linear-gradient(to bottom, black 99%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 99%, transparent 100%);
+}
+
+.project-image-wrapper img {
+  filter: grayscale(50%);
+  transition: filter 0.5s ease;
+}
+
+.Project-card:hover .project-image-wrapper img {
+  filter: grayscale(0%);
 }
 
 .Project-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-2px);
 }
 
 .Project-card img {
@@ -323,6 +334,9 @@ main {
   height: 300px;
   object-fit: cover;
   border-radius: 4px 4px 0 0;
+
+  -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
 }
 
 .Project-card p {
@@ -370,6 +384,11 @@ h2 {
 }
 
 #pitch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   text-align: center;
 }
 
@@ -381,14 +400,17 @@ h2 {
   text-align: center;
 }
 
+#pitch,
+#about-me {
+  height: 100%;
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: stretch;
-  justify-content: center;
   gap: 2rem;
   padding: 2rem;
-  text-align: center;
 }
 
 /* Media query, mobile layout */
